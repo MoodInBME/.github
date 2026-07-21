@@ -20,10 +20,10 @@
 
 **MoodIn** adalah cermin pintar (smart mirror) yang mengklasifikasikan mood pengguna secara real-time dengan menggabungkan dua sinyal tanpa kontak:
 
-- **Ekspresi wajah** — diproses dengan Graph Convolutional Network (ST-GCN / Graph-Transformer) untuk mengekstrak intensitas Action Unit.
+- **Ekspresi wajah** — diproses dengan Graph Convolutional Network (ST-GCN / Graph-Transformer) untuk mengestimasi **valence–arousal** ekspresi (pendekatan VA-bridge).
 - **Sinyal fisiologis** — detak & variabilitas jantung (HR/HRV) diestimasi dari wajah lewat remote Photoplethysmography (rPPG).
 
-Keduanya difusikan menjadi representasi mood dimensional (valence–arousal) dan diklasifikasikan ke **5 kelas**: Ceria, Cemas, Tertekan, Rileks, Netral — lengkap dengan tren mingguan dan micro-intervention sebagai wellness coach personal.
+Keduanya difusikan di ruang **valence–arousal** — valence diambil dari ekspresi wajah, arousal dari gabungan ekspresi & rPPG — lalu satu pemetaan kuadran mengklasifikasikannya ke **5 kelas**: Ceria, Cemas, Tertekan, Rileks, Netral — lengkap dengan tren mingguan dan micro-intervention sebagai wellness coach personal.
 
 ## Repositori
 
