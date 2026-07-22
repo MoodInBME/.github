@@ -41,8 +41,8 @@ Keduanya difusikan di ruang **valence–arousal** — valence diambil dari ekspr
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DL-EE4C2C?logo=pytorch&logoColor=white)
 ![Qt](https://img.shields.io/badge/PySide6%20%2B%20QML-UI-41CD52?logo=qt&logoColor=white)
-![Jetson](https://img.shields.io/badge/Jetson%20Orin%20Nano%20Super-edge-76B900?logo=nvidia&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi%205-alternatif-A22846?logo=raspberrypi&logoColor=white)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi%205-edge-A22846?logo=raspberrypi&logoColor=white)
+![Jetson](https://img.shields.io/badge/Jetson%20Orin%20Nano%20Super-rencana-76B900?logo=nvidia&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-TLS-660066?logo=mqtt&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-landmarks-0097A7)
 
