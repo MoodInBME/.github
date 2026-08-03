@@ -4,7 +4,7 @@
 
 # MoodIn · Tim VisionaryX
 
-### Smart Mirror untuk Klasifikasi Mood berbasis Graph Convolutional Network & remote Photoplethysmography
+### Smart Mirror untuk Klasifikasi Mood Berbasis Graph Convolutional Network dan remote Photoplethysmography
 
 *Personal Wellness Coach — memantau mood harian secara non-intrusive, tanpa kontak.*
 
@@ -16,23 +16,29 @@
 
 ---
 
-## Tentang
+## Tentang Kami
 
-**MoodIn** adalah cermin pintar (smart mirror) yang mengklasifikasikan mood pengguna secara real-time dengan menggabungkan dua sinyal tanpa kontak:
+Kami sedang membangun sebuah cermin pintar (smart mirror) yang mampu mengenali kondisi afektif penggunanya secara **contactless**, dan memberikan intervensi mikro sebagai *personal wellness coach*.
 
-- **Ekspresi wajah** — diproses dengan Graph Convolutional Network (ST-GCN / Graph-Transformer) untuk mengestimasi **valence–arousal** ekspresi (pendekatan VA-bridge).
-- **Sinyal fisiologis** — detak & variabilitas jantung (HR/HRV) diestimasi dari wajah lewat remote Photoplethysmography (rPPG).
+Model kami mengekstrak dua kanal sensorik untuk mendapatkan satu keputusan:
 
-Keduanya difusikan di ruang **valence–arousal** — valence diambil dari ekspresi wajah, arousal dari gabungan ekspresi & rPPG — lalu satu pemetaan kuadran mengklasifikasikannya ke **5 kelas**: Ceria, Cemas, Tertekan, Rileks, Netral — lengkap dengan tren mingguan dan micro-intervention sebagai wellness coach personal.
+| Kanal | Metode | Yang diukur |
+|---|---|---|
+| Biomekanik wajah | **ST-GCN + Graph Transformer** atas 68 landmark iBUG | Valence dan Arousal dari dinamika ekspresi |
+| Fisiologis | **STC-rPPG** atas ROI dahi dan pipi | Denyut jantung, HRV, laju napas |
+
+Kedua fitur tersebut digabung lewat *late fusion* pada bidang circumplex Russell, menghasilkan 5 kelas mood: **Ceria, Rileks, Cemas, Tertekan, Netral**.
+
+Seluruh proses inferensi berjalan secara **real-time di perangkat edge** (NVIDIA Jetson Orin Nano Super, 8 GB). Citra wajah dan data biometrik mentah tidak pernah dikirimkan ke cloud (hanya nilai numerik saja), memastikan kepatuhan terhadap prinsip privasi dan perlindungan data (UU PDP No. 27/2022).
 
 ## Repositori
 
 | Repo | Fungsi |
 | --- | --- |
-| [MoodIn-master](https://github.com/MoodInBME/MoodIn-master) | Hub proyek: dokumentasi, proposal, konvensi lintas-repo |
-| [Hardware-Connections](https://github.com/MoodInBME/Hardware-Connections) | Wiring, enclosure, kamera, daya, protokol komunikasi |
-| [Software-Architecture](https://github.com/MoodInBME/Software-Architecture) | Model deep learning, feature fusion, training, evaluasi |
-| [Interface-Display](https://github.com/MoodInBME/Interface-Display) | Antarmuka kiosk (PySide6 + QML) pada perangkat |
+| [MoodIn-master](https://github.com/MoodInBME/MoodIn-master) | Hub proyek: dokumentasi, ADR, rencana integrasi lintas-repo |
+| [Hardware-Connections](https://github.com/MoodInBME/Hardware-Connections) | Skema kabel, konfigurasi CSI kamera, daya, termal, dan perakitan |
+| [Software-Architecture](https://github.com/MoodInBME/Software-Architecture) | Model ST-GCN dan STC-rPPG, pipeline data, fusi fitur, evaluasi |
+| [Interface-Display](https://github.com/MoodInBME/Interface-Display) | Antarmuka UI cermin (PySide6 + QML) dan integrasi mock pub/sub |
 
 > Tautan repo di atas hanya dapat diakses publik bila repo bersangkutan berstatus *public*. Repo yang masih *private* akan menampilkan 404 bagi pengunjung anonim.
 
@@ -41,8 +47,7 @@ Keduanya difusikan di ruang **valence–arousal** — valence diambil dari ekspr
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-DL-EE4C2C?logo=pytorch&logoColor=white)
 ![Qt](https://img.shields.io/badge/PySide6%20%2B%20QML-UI-41CD52?logo=qt&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi%205-edge-A22846?logo=raspberrypi&logoColor=white)
-![Jetson](https://img.shields.io/badge/Jetson%20Orin%20Nano%20Super-rencana-76B900?logo=nvidia&logoColor=white)
+![Jetson Orin Nano Super](https://img.shields.io/badge/NVIDIA%20Jetson%20Orin%20Nano-Super-76B900?logo=nvidia&logoColor=white)
 ![MQTT](https://img.shields.io/badge/MQTT-TLS-660066?logo=mqtt&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-landmarks-0097A7)
 
@@ -50,18 +55,19 @@ Keduanya difusikan di ruang **valence–arousal** — valence diambil dari ekspr
 
 | Nama | Peran |
 | --- | --- |
-| Jeremia Christ Immanuel Manalu | Ketua |
-| Tanuhita Setya Dhanurendra | Anggota |
-| Nozomi Crystalle Padilla Malle | Anggota |
+| Jeremia Christ Immanuel Manalu | Ketua, arsitektur perangkat lunak |
+| Tanuhita Setya Dhanurendra | Anggota, model dan pemrosesan sinyal |
+| Nozomi Crystalle Padilla Malle | Anggota, antarmuka dan integrasi |
 
 **Dosen Pembimbing:** Nada Fitrieyatul Hikmah, S.T., M.T.
 
 ## Dampak
 
-Mendukung Sustainable Development Goals **SDG 3** (kesehatan & kesejahteraan), **SDG 4** (pendidikan berkualitas), dan **SDG 9** (industri, inovasi, infrastruktur).
+Mendukung Sustainable Development Goals **SDG 3** (Kesehatan yang Baik dan Kesejahteraan), **SDG 4** (Pendidikan Berkualitas), dan **SDG 9** (Industri, Inovasi, dan Infrastruktur).
 
 <div align="center">
 
-— Institut Teknologi Sepuluh Nopember · Surabaya, Indonesia —
+— Departemen Teknik Biomedik, Fakultas Teknologi Industri dan Rekayasa Sistem —
+Institut Teknologi Sepuluh Nopember · Surabaya, Indonesia
 
 </div>
