@@ -56,8 +56,8 @@ Seluruh proses inferensi berjalan secara **real-time di perangkat edge** (NVIDIA
 | Nama | Peran |
 | --- | --- |
 | Jeremia Christ Immanuel Manalu | Ketua, arsitektur perangkat lunak |
-| Tanuhita Setya Dhanurendra | Anggota, model dan pemrosesan sinyal |
-| Nozomi Crystalle Padilla Malle | Anggota, antarmuka dan integrasi |
+| Tanuhita Setya Dhanurendra | Anggota, perangkat keras dan dokumentasi |
+| Sitti Nurhalimah | Anggota, STC-rPPG dan antarmuka |
 
 **Dosen Pembimbing:** Nada Fitrieyatul Hikmah, S.T., M.T.
 
