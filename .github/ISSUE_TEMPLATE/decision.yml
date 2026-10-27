@@ -1,0 +1,45 @@
+name: Keputusan
+description: Catat keputusan teknis, termasuk yang masih menunggu bimbingan.
+title: "decision: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keputusan metode yang belum boleh dipublikasikan dicatat di log internal penulis, bukan di issue publik.
+        Keputusan yang sudah final dipindahkan ke docs/adr.md di repo MoodIn-master.
+  - type: textarea
+    id: konteks
+    attributes:
+      label: Konteks
+      description: Masalah yang perlu diputuskan dan batasannya.
+    validations:
+      required: true
+  - type: textarea
+    id: opsi
+    attributes:
+      label: Opsi
+      description: Pilihan yang tersedia beserta kelebihan dan risikonya.
+    validations:
+      required: true
+  - type: textarea
+    id: usulan
+    attributes:
+      label: Usulan penulis
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Menunggu bimbingan
+        - Diputuskan
+        - Dibatalkan
+    validations:
+      required: true
+  - type: textarea
+    id: keputusan
+    attributes:
+      label: Keputusan akhir dan tanggal
+  - type: textarea
+    id: dampak
+    attributes:
+      label: Dampak ke repo lain

@@ -1,0 +1,43 @@
+name: Tugas
+description: Pekerjaan terencana, misalnya kode, dokumen, perangkat keras, atau antarmuka.
+title: "<tipe>: "
+body:
+  - type: textarea
+    id: tujuan
+    attributes:
+      label: Tujuan
+      description: Apa yang ingin dicapai dan mengapa diperlukan.
+    validations:
+      required: true
+  - type: textarea
+    id: cakupan
+    attributes:
+      label: Cakupan pekerjaan
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: selesai
+    attributes:
+      label: Kriteria selesai
+      description: Kondisi terukur yang menandakan tugas selesai.
+    validations:
+      required: true
+  - type: textarea
+    id: ketergantungan
+    attributes:
+      label: Ketergantungan
+      description: Issue lain, keputusan bimbingan, atau perubahan di repo lain yang harus selesai lebih dulu.
+  - type: dropdown
+    id: milestone
+    attributes:
+      label: Milestone
+      options:
+        - M0 Arsip GEMASTIK dan tata kelola repo
+        - M1 Jalur fisiologis
+        - M2 Perangkat keras dan pengujian di Jetson
+        - M3 Antarmuka Flutter
+        - M4 Jalur wajah
+        - M5 Integrasi dan uji sistem

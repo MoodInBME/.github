@@ -1,0 +1,41 @@
+name: Eksperimen
+description: Rencana dan hasil satu eksperimen, beserta dataset, konfigurasi, dan metriknya.
+title: "exp: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Catat eksperimen agar bisa diulang. Jangan mengunggah data, citra wajah, atau keluaran yang memuat data subjek.
+        Rincian metode TA yang belum boleh dipublikasikan cukup dirujuk ke catatan internal penulis.
+  - type: textarea
+    id: pertanyaan
+    attributes:
+      label: Pertanyaan atau hipotesis
+    validations:
+      required: true
+  - type: input
+    id: dataset
+    attributes:
+      label: Dataset
+      description: Nama dataset dan bagian yang dipakai.
+  - type: textarea
+    id: konfigurasi
+    attributes:
+      label: Konfigurasi
+      description: SHA commit, berkas konfigurasi, seed, dan perangkat (laptop, Jetson, Kaggle, atau Colab).
+      render: text
+  - type: textarea
+    id: metrik
+    attributes:
+      label: Metrik dan kriteria keberhasilan
+    validations:
+      required: true
+  - type: textarea
+    id: hasil
+    attributes:
+      label: Hasil
+      description: Diisi setelah eksperimen selesai.
+  - type: textarea
+    id: kesimpulan
+    attributes:
+      label: Kesimpulan dan langkah berikutnya

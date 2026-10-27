@@ -1,0 +1,62 @@
+name: Bug atau error
+description: Laporkan error, hasil yang salah, atau tautan mati.
+title: "fix: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Jangan menempelkan token, kata sandi, data pribadi, citra wajah, atau potongan dataset di sini.
+        Masalah keamanan dilaporkan sesuai SECURITY.md, bukan lewat issue publik.
+  - type: textarea
+    id: ringkasan
+    attributes:
+      label: Ringkasan
+      description: Apa yang salah, dalam satu atau dua kalimat.
+    validations:
+      required: true
+  - type: textarea
+    id: langkah
+    attributes:
+      label: Langkah reproduksi
+      description: Perintah yang dijalankan secara berurutan, beserta folder kerjanya.
+      placeholder: |
+        1. cd ...
+        2. python ...
+    validations:
+      required: true
+  - type: textarea
+    id: hasil
+    attributes:
+      label: Hasil yang diharapkan dan hasil aktual
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Pesan error utuh
+      description: Salin teks lengkapnya, bukan tangkapan layar saja.
+      render: text
+  - type: dropdown
+    id: lingkungan
+    attributes:
+      label: Lingkungan
+      multiple: true
+      options:
+        - Laptop Windows
+        - Jetson Orin Nano Super (Ubuntu 24.04, JetPack 7.2)
+        - Kaggle atau Colab
+        - Lainnya (jelaskan di kolom versi)
+    validations:
+      required: true
+  - type: input
+    id: versi
+    attributes:
+      label: Versi
+      description: SHA commit, versi Python, dan versi paket yang relevan.
+      placeholder: "commit abc1234, Python 3.12.x, torch ..."
+  - type: textarea
+    id: lintas-repo
+    attributes:
+      label: Dampak ke repo lain
+      description: Sebutkan repo lain yang ikut terdampak, bila ada.
