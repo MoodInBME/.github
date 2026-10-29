@@ -1,6 +1,7 @@
 name: Keputusan
 description: Catat keputusan teknis, termasuk yang masih menunggu bimbingan.
 title: "decision: "
+labels: ["jenis:keputusan"]
 body:
   - type: markdown
     attributes:

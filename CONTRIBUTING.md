@@ -42,11 +42,14 @@ Perubahan yang memengaruhi repo lain, misalnya kontrak pesan MQTT, nama topik, s
 
 - Berkas dataset dan turunannya: video, sinyal, _landmark_, anotasi, fitur, dan _cache_ tensor. Pemakaian dataset terikat perjanjian lisensi (EULA).
 - Citra atau video wajah siapa pun.
+- Data partisipan penelitian dalam bentuk apa pun: rekaman, sinyal, jawaban kuesioner, hasil skrining, data identitas, lembar persetujuan, serta kode partisipan beserta kunci penghubungnya. Data ini dikelola di luar GitHub sesuai protokol yang disetujui Komite Etik Penelitian (KEP) ITS; aturannya ada di [etika dan data](https://github.com/MoodInBME/MoodIn-master/blob/main/docs/etika-dan-data.md).
 - Token, kata sandi, kunci API, dan berkas kredensial seperti `kaggle.json` atau `.env`.
 - Data pribadi: NRP, nomor identitas, foto KTP/KTM, nomor telepon, dan email pribadi di dalam dokumen.
 - Bobot model berukuran besar. Simpan di luar git dan tuliskan cara mendapatkannya di README.
 
-Bila terlanjur masuk, cabut atau ganti kredensialnya lebih dulu, lalu tangani sesuai [SECURITY.md](SECURITY.md). Menghapus berkas dari commit terbaru tidak menghapusnya dari riwayat git.
+Pola `.gitignore` di setiap repo dan _pre-push hook_ di mesin penulis menolak sebagian berkas di atas, misalnya folder data partisipan, video, audio, sinyal, bobot model, dan berkas di atas 10 MB. Keduanya hanya pengaman kedua.
+
+Bila terlanjur masuk, cabut atau ganti kredensialnya lebih dulu, lalu tangani sesuai [SECURITY.md](SECURITY.md). Menghapus berkas dari commit terbaru tidak menghapusnya dari riwayat git. Paparan data partisipan juga dilaporkan sesuai protokol yang disetujui KEP ITS.
 
 ### Standar teknis
 
@@ -56,4 +59,4 @@ Bila terlanjur masuk, cabut atau ganti kredensialnya lebih dulu, lalu tangani se
 
 ## Lisensi
 
-Setiap repo mengikuti berkas `LICENSE` miliknya. Repo tanpa berkas `LICENSE` belum dilisensikan untuk dipakai ulang; lisensinya menunggu keputusan bersama calon dosen pembimbing.
+Setiap repo mengikuti berkas `LICENSE` miliknya. Repo tanpa berkas `LICENSE` belum dilisensikan untuk dipakai ulang; lisensinya menunggu keputusan bersama calon dosen pembimbing. Lisensi repo hanya mencakup kode dan dokumen, tidak pernah data partisipan penelitian.

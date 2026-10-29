@@ -14,7 +14,7 @@ MoodIn sendiri adalah cermin pintar untuk mengenali suasana hati dan tingkat str
 | [`profile/README.md`](profile/README.md)                               | Halaman profil organisasi: tentang MoodIn, alur pemeriksaan, prinsip, peta repositori, dan tim                        |
 | [`profile/assets/`](profile/assets/)                                   | Gambar halaman profil dan README ini (banner, ikon, wajah suasana hati) beserta [kreditnya](profile/assets/KREDIT.md) |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md)                                   | Status proyek dan aturan kerja: siapa yang membuat commit, format pesan commit, dan isi terlarang                     |
-| [`SECURITY.md`](SECURITY.md)                                           | Cara melapor kredensial bocor, data pribadi, atau celah keamanan secara tertutup                                      |
+| [`SECURITY.md`](SECURITY.md)                                           | Cara melapor kredensial bocor, data pribadi, data partisipan penelitian, atau celah keamanan secara tertutup          |
 | [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE/)                   | Templat _issue_: laporan bug, tugas, eksperimen, dan keputusan                                                        |
 | [`.github/pull_request_template.md`](.github/pull_request_template.md) | Daftar periksa untuk _pull request_                                                                                   |
 

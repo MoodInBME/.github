@@ -1,12 +1,12 @@
 name: Bug atau error
 description: Laporkan error, hasil yang salah, atau tautan mati.
 title: "fix: "
-labels: ["bug"]
+labels: ["jenis:bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Jangan menempelkan token, kata sandi, data pribadi, citra wajah, atau potongan dataset di sini.
+        Jangan menempelkan token, kata sandi, data pribadi, data partisipan penelitian, citra wajah, atau potongan dataset di sini.
         Masalah keamanan dilaporkan sesuai SECURITY.md, bukan lewat issue publik.
   - type: textarea
     id: ringkasan

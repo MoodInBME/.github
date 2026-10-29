@@ -1,6 +1,7 @@
 name: Eksperimen
 description: Rencana dan hasil satu eksperimen, beserta dataset, konfigurasi, dan metriknya.
 title: "exp: "
+labels: ["jenis:eksperimen"]
 body:
   - type: markdown
     attributes:

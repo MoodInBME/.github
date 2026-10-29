@@ -17,7 +17,7 @@
 
 ## Pemeriksaan
 
-- [ ] Tidak ada kredensial, data pribadi, citra wajah, atau berkas dataset.
+- [ ] Tidak ada kredensial, data pribadi, data partisipan, citra wajah, atau berkas dataset.
 - [ ] Pesan commit tanpa `Co-authored-by:` dan tanpa atribusi alat AI.
 - [ ] Uji atau pemeriksaan yang relevan sudah dijalankan: <!-- perintah dan hasilnya -->
 

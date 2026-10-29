@@ -103,7 +103,7 @@ Satu sesi dirancang singkat dan berurutan, dari menyapa pengguna sampai menyimpa
 
 ## Prinsip
 
-Karena menyangkut wajah dan kondisi emosional seseorang, MoodIn dibangun dengan beberapa batasan yang berlaku di semua repositori.
+Karena menyangkut wajah dan kondisi emosional seseorang, MoodIn dibangun dengan beberapa batasan. Batasan di bawah berlaku untuk cara kerja cermin dan untuk isi semua repositori di organisasi ini.
 
 <table>
   <tr>
@@ -131,6 +131,8 @@ Karena menyangkut wajah dan kondisi emosional seseorang, MoodIn dibangun dengan 
     </td>
   </tr>
 </table>
+
+Pengambilan data penelitian dengan partisipan (data primer) diatur terpisah oleh protokol yang harus disetujui Komite Etik Penelitian (KEP) ITS lebih dulu, termasuk apa yang direkam, bagaimana data disimpan, dan kapan data dihapus. Data partisipan tidak pernah disimpan di repositori. Rinciannya ada di halaman [Etika penelitian dan pengelolaan data](https://github.com/MoodInBME/MoodIn-master/blob/main/docs/etika-dan-data.md).
 
 ## Repositori
 
@@ -193,7 +195,7 @@ Kode dan dokumen MoodIn dipisah per lapisan sistem. Antar-repositori tidak salin
 
 <img src="https://raw.githubusercontent.com/MoodInBME/.github/main/profile/assets/ikon/status.png" width="44" align="right" alt="">
 
-Tahap sekarang adalah penyusunan dan revisi Proposal Tugas Akhir (Pra-TA). Di sisi repositori, arsip GEMASTIK, tata kelola, dan dokumentasi sedang dirapikan (milestone M0). Pekerjaan teknis berikutnya dimulai dari jalur fisiologis pada dataset publik (M1). Rincian metode, parameter, dan rancangan pengujian ada di dokumen proposal dan **belum dipublikasikan**.
+Tahap sekarang adalah penyusunan dan revisi Proposal Tugas Akhir (Pra-TA). Di sisi repositori, arsip GEMASTIK, tata kelola, dan dokumentasi sedang dirapikan (milestone M0). Pekerjaan teknis berikutnya dimulai dari jalur fisiologis pada dataset publik (M1). Rincian metode, parameter, dan rancangan pengujian ada di dokumen proposal dan **belum dipublikasikan**. Pengambilan data primer belum dimulai; protokolnya sedang disiapkan untuk diajukan ke KEP ITS.
 
 Roadmap lengkap ada di [MoodIn-master/docs/roadmap.md](https://github.com/MoodInBME/MoodIn-master/blob/main/docs/roadmap.md).
 

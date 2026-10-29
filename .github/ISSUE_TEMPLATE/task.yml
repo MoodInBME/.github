@@ -1,6 +1,7 @@
 name: Tugas
 description: Pekerjaan terencana, misalnya kode, dokumen, perangkat keras, atau antarmuka.
 title: "<tipe>: "
+labels: ["jenis:tugas"]
 body:
   - type: textarea
     id: tujuan
