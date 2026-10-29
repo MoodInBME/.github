@@ -4,7 +4,7 @@ Berkas ini berlaku untuk semua repo di organisasi MoodInBME yang tidak punya `SE
 
 ## Ruang lingkup
 
-MoodIn adalah prototipe riset Tugas Akhir. Proyek ini bukan layanan produksi dan bukan alat medis. Laporan yang paling relevan:
+MoodIn adalah prototipe riset tahap Proposal Tugas Akhir (Pra-TA). Proyek ini bukan layanan produksi dan bukan alat medis. Laporan yang paling relevan:
 
 - kredensial yang bocor (token, kata sandi, kunci API), baik di berkas maupun di riwayat git;
 - data pribadi atau citra wajah yang ikut ter-commit;

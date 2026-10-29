@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Catat eksperimen agar bisa diulang. Jangan mengunggah data, citra wajah, atau keluaran yang memuat data subjek.
-        Rincian metode TA yang belum boleh dipublikasikan cukup dirujuk ke catatan internal penulis.
+        Rincian metode yang belum boleh dipublikasikan cukup dirujuk ke catatan internal penulis.
   - type: textarea
     id: pertanyaan
     attributes:

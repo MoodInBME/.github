@@ -4,10 +4,10 @@ Berkas ini berlaku untuk semua repo di organisasi MoodInBME yang tidak punya `CO
 
 ## Status proyek
 
-MoodIn adalah **Tugas Akhir individual** Jeremia Christ Immanuel Manalu (Departemen Teknik Biomedik, Institut Teknologi Sepuluh Nopember). Karena itu:
+MoodIn dikembangkan sebagai **Proposal Tugas Akhir (Pra-TA) individual** oleh Jeremia Christ Immanuel Manalu (Departemen Teknik Biomedik, Fakultas Teknologi Elektro dan Informatika Cerdas, Institut Teknologi Sepuluh Nopember). Karena itu:
 
-- **Hanya Jeremia yang membuat commit dan push.** Anggota tim GEMASTIK dan dosen pembimbing punya akses baca.
-- **_Pull request_ dari luar tidak diterima.** Hasil TA harus dapat dipertanggungjawabkan sebagai karya penulisnya.
+- **Hanya Jeremia yang membuat commit dan push.** Anggota tim GEMASTIK dan calon dosen pembimbing punya akses baca.
+- **_Pull request_ dari luar tidak diterima.** Hasil Pra-TA dan Tugas Akhir harus dapat dipertanggungjawabkan sebagai karya penulisnya.
 - **_Issue_ boleh dibuka** untuk melaporkan error, tautan mati, atau pertanyaan. Gunakan templat yang tersedia.
 - Masalah keamanan atau data pribadi dilaporkan sesuai [SECURITY.md](SECURITY.md), **bukan** lewat _issue_ publik.
 
@@ -56,4 +56,4 @@ Bila terlanjur masuk, cabut atau ganti kredensialnya lebih dulu, lalu tangani se
 
 ## Lisensi
 
-Setiap repo mengikuti berkas `LICENSE` miliknya. Repo tanpa berkas `LICENSE` belum dilisensikan untuk dipakai ulang; lisensinya menunggu keputusan pembimbing.
+Setiap repo mengikuti berkas `LICENSE` miliknya. Repo tanpa berkas `LICENSE` belum dilisensikan untuk dipakai ulang; lisensinya menunggu keputusan bersama calon dosen pembimbing.
